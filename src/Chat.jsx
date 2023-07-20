@@ -1,16 +1,17 @@
-const SendbirdProvider = require('@sendbird/uikit-react/cjs/SendbirdProvider');
+const App = require('@sendbird/uikit-react/cjs/App');
 const React = require('react');
 
-function App() {
-  debugger
+function Chat() {
   return (
-    <div>
-      <h1>React 18</h1>
-      <SendbirdProvider>
-        <h1>React 18</h1>
-      </SendbirdProvider>
+    <div style={{ height: '100vh' }}>
+      <h1>CJS app</h1>
+      <App
+        appId="//"
+        userId="sendbird"
+        nickname="sendbird"
+      />
     </div>
   );
 }
 
-module.exports = App;
+module.exports = Chat;
